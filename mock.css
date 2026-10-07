@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+    width: 100%;
+     background-color: red;
+}
+#nav1 img{
+    width: 150px;
+    height: auto;
+    display: block;
+}
+/* #toy1{
+    display: flex;
+    align-items: center;
+}
+#toy{
+    display: none;
+}
+#toy1:hover+#toy{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 40px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.toy-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.toy-item img{
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+.toys-item p{
+    margin-top: 8px;
+    font-weight: 500;
+    color: black;
+} */
+ .carouselExample{
+    animation-name: move;
+    background-color: red;
+    animation-duration:5sec;
+    animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            from{
+                transform:translateX(0px);
+            
+
+            }
+            to{
+                 transform:translateX(900px);
+            }
+        }
+ 

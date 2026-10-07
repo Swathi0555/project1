@@ -1,0 +1,340 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x:hidden;
+}
+header{
+    height:210px;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+}
+nav ul{
+    display:flex;
+    gap:45px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+.box{
+    width:100%;
+    height:700px;
+    background-image:url("https://images.squarespace-cdn.com/content/v1/534444fbe4b0f9ffdd2ebc61/1510764242245-JIWZSYBY8CYHZBOEUGAM/Ray+Romano+Loft+renovation+nyc+brooklyn+hamptons+luxury+construction.jpg?format=2500w"); 
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+.box1{
+    position:absolute;
+    top:120px;
+    left:80px;
+}
+.box1 h1{
+    display:inline-block;
+    background:rgba(255,255,255,.75);
+    padding:15px 30px;
+    font-size:55px;
+    font-weight:300;
+    letter-spacing:8px;
+    color:black;
+}
+.box1 p{
+    width:1060px;
+    margin-top:35px;
+    background:rgba(255,255,255,.75);
+    padding:18px 30px;
+    font-size:22px;
+    line-height:1.7;
+    color:rgb(91, 91, 91);
+}
+.second{
+    width:100%;
+    background:white;
+    padding:120px 0;
+}
+.box2{
+    width:65%;
+    margin:auto;
+}
+.box2 h1{
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:6px;
+    margin-bottom:35px;
+}
+.box2 p{
+    font-size:18px;
+    line-height:1.5;
+    color:rgb(69, 69, 69);
+}
+.img2{
+    width:100%;
+    height:700px;
+    background-image:url("https://images.squarespace-cdn.com/content/v1/534444fbe4b0f9ffdd2ebc61/1510765722553-76QEADJUAJRSEYMGLNSA/Ray+Romano+Contracting+combination+renovation+luxury+contemporary+Upper+East+Side+NYC+Hamptons+Brooklyn+NJ.jpg?format=2500w");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+.box3{
+    position:absolute;
+    left:90px;
+    top:90px;
+    background:rgba(255,255,255,.55);
+    width:1150px;
+    padding:25px 35px;
+}
+.box3 h2{
+    font-size:50px;
+    font-weight:400;
+    letter-spacing:7px;
+    color:rgb(65, 65, 65);
+}
+.service{
+    width:100%;
+    background:white;
+    padding:120px 0;
+}
+.box4{
+    width:64%;
+    margin:auto;
+}
+.box4 h2{
+    font-size:30px;
+    letter-spacing:2px;
+    font-weight:550;
+    margin-bottom:30px;
+    color:rgb(65, 65, 65);
+}
+.box4 p{
+    font-size:18px;
+    line-height:1.5;
+    color:rgb(65, 65, 65);
+}
+.img3{
+    width:100%;
+    height:650px;
+    background-image:url("https://images.squarespace-cdn.com/content/v1/534444fbe4b0f9ffdd2ebc61/1510766494470-KZDDR11SFE43N4RHTCLR/Ray+Romano+Hamptons+Sag+Harbor+renovation.jpg?format=2500w");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+.box5{
+    position:absolute;
+    left:80px;
+    top:90px;
+    background:rgba(255,255,255,.60);
+    padding:18px 40px;
+}
+.box5 h1{
+    font-size:40px;
+    font-weight:300;
+    letter-spacing:8px;
+    color:rgb(65, 65, 65);
+}
+.testimonial{
+    width:100%;
+    background:white;
+    padding:120px 0;
+}
+.box6{
+    width:64%;
+    margin:auto;
+}
+.box6 h2{
+    font-size:25px;
+    font-weight:600;
+    letter-spacing:3px;
+    margin-bottom:30px;
+    color:rgb(65, 65, 65);
+}
+.box6 p{
+    font-size:18px;
+    line-height:1.5;
+    color:rgb(65, 65, 65);
+}
+.img4{
+    width:100%;
+    height:650px;
+    background-image:url("https://images.squarespace-cdn.com/content/v1/534444fbe4b0f9ffdd2ebc61/1511367750555-BQMOKM1VBYO8IKWMX44W/1040.JPG?format=2500w");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+.box7{
+    position:absolute;
+    top:90px;
+    left:80px;
+    background:rgba(255,255,255,.6);
+    padding:18px 40px;
+}
+.box7 h1{
+    font-size:40px;
+    font-weight:300;
+    letter-spacing:7px;
+    color:rgb(65, 65, 65);
+}
+.gallery{
+    width:100%;
+    background:white;
+    padding:120px 0;
+}
+.box8{
+    width:64%;
+    margin:auto;
+}
+.box9{
+    margin-bottom:55px;
+}
+.box9 h2{
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:18px;
+    color:rgb(65, 65, 65);
+}
+.box9 h2 span{
+    font-style:italic;
+    font-weight:600;
+    color: black;
+}
+.box9 p{
+    font-size:18px;
+    line-height:1.5;
+    color:black;
+}
+.img5{
+    width:100%;
+    height:650px;
+    background-image:url("https://images.squarespace-cdn.com/content/v1/534444fbe4b0f9ffdd2ebc61/1510767064224-MG3QKU4EG3Y4TCIEHUZQ/Custom+Closet+Ray+Rompano+Contracting+NYC+Brooklyn+Upper+east+Side+NYC+renovation.jpg?format=2500w");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+.box10{
+    position:absolute;
+    left:80px;
+    top:90px;
+    background:rgba(255,255,255,.65);
+    padding:18px 40px;
+}
+.box10 h1{
+    font-size:55px;
+    font-weight:300;
+    letter-spacing:10px;
+    color:rgb(65, 65, 65);
+}
+.images{
+    width:100%;
+    padding:100px 0;
+}
+.box11{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:50px 40px;
+}
+.card{
+    overflow:hidden;
+}
+.card img{
+    width:400px;
+    height:260px;
+}
+.card h3{
+    margin-top:18px;
+    font-size:15px;
+    font-weight:400;
+    color:rgb(65, 65, 65);
+}
+
+footer{
+    width:100%;
+    height: 200px;
+    background:black;
+    position:relative;
+    padding:70px 0;
+}
+.top{
+    position:absolute;
+    top:-35px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.top a{
+    width:70px;
+    height:70px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:rgb(66, 65, 65);
+    font-size:14px;
+    font-weight:bold;
+}
+.top i{
+    font-size:20px;
+    margin-bottom:5px;
+}
+.footer{
+    width:85%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+    flex-wrap:wrap;
+}
+.icons{
+    display:flex;
+    gap:10px;
+}
+.icons a{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:white;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+.icons a:hover{
+    background:silver;
+    color:white;
+}
+.footer-text{
+    color:white;
+    font-size:17px;
+    line-height:1.5;
+}
+#footer{
+    height: 300px;
+    background-color: white;
+}

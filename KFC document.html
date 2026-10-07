@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        button {
+            height: 30px;
+            width: 150px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 20px;
+            position: sticky;  
+        }
+        .ul1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+             position: sticky;
+             top: 20px;
+            z-index: 4;
+        }
+        .li1 {
+            padding: 10px 130px
+        }
+        .kfc {
+            height: 50px;
+            width: 50px;
+        }
+        .div2 {
+            height: 70px;
+            width: 900;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            position: relative;
+            bottom: 150px;
+        }
+        .but1 {
+            background-color: red;
+            height: 45px;
+            width: 180px;
+            border-radius: 40px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        h1 {
+            margin-top: 90px;
+            margin-left: 90px;
+             position: relative;
+            bottom: 180px;
+             
+        }
+        .div1 {
+            position: relative;
+            left: 100px;
+             position: relative;
+            bottom: 150px;
+        }
+        .div4 {
+            position: relative;
+            left: 690px;
+            bottom: 394px;
+             position: relative;
+            bottom: 545px;
+        }
+        .div3 {
+            position: relative;
+            left: 1030px;
+            bottom: 649px;
+             position: relative;
+            bottom: 800px;
+        }
+        .kfc1 {
+            background-color: antiquewhite;
+            justify-content: center;
+            height: 60px;
+            width: 555px;
+            position: relative;
+            left: 100px;
+            bottom: 662px;
+            text-align: center;
+        }
+        .kfc2 {
+            background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 70px;
+            width: 300px;
+            position: relative;
+            left: 640px;
+            bottom: 950px;
+             text-align: center;
+        }
+        .kfc3 {
+            background-color: antiquewhite;
+            justify-content: center;
+            text-indent: 20px;
+            margin: 50px;
+            height: 70px;
+            width: 300px;
+            position: relative;
+            left: 980px;
+            bottom: 1070px;
+             text-align: center;
+        }
+        .kfc4 {
+            background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 70px;
+            width: 300px;
+            position: relative;
+            left: 640px;
+            bottom: 1100px;
+             text-align: center;
+        }
+        .kfc5 {
+            background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 70px;
+            width: 300px;
+            position: relative;
+            left: 980px;
+            bottom: 1180px;
+             text-align: center;
+        }
+        .p1{
+            background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 120px;
+            width: 555px;
+            position: relative;
+            left: 50px;
+            bottom: 1195px;
+        }
+        .p2{
+             background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 80px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            left: 640px;
+            bottom: 1265px;
+
+        }
+        .p3{
+             background-color: antiquewhite;
+            justify-content: center;
+            margin: 50px;
+            height: 80px;
+            width: 300px;
+            position: relative;
+            text-align: center;
+            left: 980px;
+            bottom: 1395px;
+        }
+        .tr1 {
+            position: relative;
+            bottom: 1410px;
+            left: 97px;
+        }
+        .td1 {
+            height: 250px;
+            width: 305px;
+        }
+        .space1 {
+            background-color: rosybrown;
+            height: 70px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        .tr2 {
+            position: relative;
+            bottom: 1120px;
+            left: 95px;
+            background-color: azure;
+            justify-content: center;
+            text-align: center;
+        }
+        .i1 {
+            height: 45px;
+            width: 15px;
+            background-color: red;
+            position: relative;
+            left: 100px;
+            bottom: 1100px;
+            
+        }
+        .i2 {
+            height: 45px;
+            width: 15px;
+            background-color: plum;
+            position: relative;
+            left: 125px;
+            bottom: 1145px;
+
+        }
+        .i3 {
+            height: 45px;
+            width: 15px;
+            background-color: blue;
+            position: relative;
+            left: 149px;
+            bottom: 1190px;
+        }
+        .scr1 {
+            overflow: scroll ;
+            scrollbar-width: none;
+            height: 220px;
+            width: 1200px;
+            margin: auto;
+            position: relative;
+            bottom: 1150px;
+        }
+        .v1 {
+            border: 2px solid red;
+
+            background-color: #F8F7F5;
+
+        }
+        .t2 {
+            position: relative;
+            bottom: 1200px;
+            left: 55px;
+        }
+        .f1 {
+            background-color: #202124;
+            height: 500px;
+            width: 1800px;
+            position: relative;
+            bottom: 1100px;
+
+        }
+        .logo {
+            position: relative;
+            left: 80px;
+            top: 170px;
+            line-height: 30px;
+        }
+        .bmw {
+            color: aliceblue;
+            position: relative;
+            left: 200px;
+            bottom: 1500px;
+            line-height: 30px;
+        }
+        .bmw2 {
+            color: aliceblue;
+            position: relative;
+            left: 350px;
+            bottom: 1700px;
+            line-height: 30px;
+        }
+        .bmw3 {
+            color: aliceblue;
+            position: relative;
+            left: 550px;
+            bottom: 1895px;
+            line-height: 30px;
+        }
+        .bmw4 {
+            color: aliceblue;
+            position: relative;
+            left: 750px;
+            bottom: 2067px;
+            line-height: 30px;
+        }
+        .bmw5 {
+            color: aliceblue;
+            position: relative;
+            left: 950px;
+            bottom: 2207px;
+            line-height: 30px;
+        }
+        .bmw6 {
+            color: aliceblue;
+            position: relative;
+            left: 1162px;
+            bottom: 2257px;
+            line-height: 30px;
+            height: 60px;
+        }
+        .bmw7 {
+            color: aliceblue;
+            position: relative;
+            left: 980px;
+            bottom: 2180px;
+            line-height: 30px;
+            height: 60px;
+        }
+        summary {
+            color: aliceblue;
+            position: relative;
+            left: 380px;
+            bottom: 2000px;
+            line-height: 30px;
+            height: 60px;
+        }
+        .bmw9 {
+            color: aliceblue;
+            position: relative;
+            left: 1080px;
+            bottom: 2080px;
+            line-height: 30px;
+            height: 60px;
+            height: 50px;
+            width: 50px;
+        }
+        .ss1{
+            height: 100px;
+            width: 100px;
+            position:relative;
+            left: 1380px;
+            bottom: 4570px;
+        }
+        .ss2{
+            position: sticky;
+            top: -20px;
+        }
+        .vv1{
+            margin:auto;
+           text-align: center;  
+        }
+        .yy1{
+            position: relative;
+            z-index: 20px;
+        }
+    </style>
+</head>
+<body>
+</div>
+        <div class="vv1">
+            <i class="fa-vellum fa-solid fa-location-arrow"></i>
+            Allow location access for local store menu and promos
+            <button> Set Location</button>
+        </div> <hr>
+       <table class="yy1">
+    <ul type="none" class="ul1">
+        <li class="li1"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt=""></li>
+        <li class="li1">Menu </li>
+        <li class="li1">Deals</li>
+        </p>
+        <li class="li4">
+            <i class="fa-solid fa-circle-user"></i>
+            Sign In
+        </li>
+        <li class="li5"><img
+                src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg?h=120&w=120&fm=webp&fit=fill"
+                alt="" class="kfc"></li>
+    </ul>
+    </table> 
+    <div class="div2">
+        LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN
+        <button class="but1">Start Order</button>
+    </div>
+    <h1>BROWSE MENU CATEGORIES</h1>
+    <section>
+        <div class="div1"> <img
+                src="https://images.ctfassets.net/wtodlh47qxpt/6kh2q1xCoNgXbVCKFp4tZO/c3c2bfea8421955d0b990f001c48f41d/KFC-BOGO-CHICKEN-ZINGER-22-JULY-465-X-327-F1B.jpg?fm=webp&fit=fill"
+                alt="" height="390px"> </div>
+        <div class="div4"> <img
+                src="https://images.ctfassets.net/wtodlh47qxpt/782tSItfC1k71car62R8tO/8384bf065c922a466ba3d6db09473e26/Dynamite_without_noodle_-_465x327px.jpg?fm=webp&fit=fill"
+                alt="" height="250px" width="300px"></div>
+        <div class="div3"> <img
+                src="https://images.ctfassets.net/wtodlh47qxpt/782tSItfC1k71car62R8tO/8384bf065c922a466ba3d6db09473e26/Dynamite_without_noodle_-_465x327px.jpg?fm=webp&fit=fill"
+                alt="" height="250px" width="300px"></div>
+        <div class="kfc1"><b>BUY 2 GET 1 ZINGER</b></div>
+        <div class="kfc2"><b>DOUBLE CHICKEN DYNAMITE</b></div>
+        <div class="kfc3"><b>SHAWOWRMA SPECIALS</b></div>
+        <div class="kfc4"> <img
+                src="https://images.ctfassets.net/wtodlh47qxpt/4AcPJzGNNxfXiF1rWvlydj/2a8548a717ff678fbfb0d881b7367ba8/KFC-Gold-Burger-White-Category-23MAY_4.jpg?fm=webp&fit=fill"
+                alt="" height="250px" width="300px"></div>
+        <div class="kfc5"> <img
+                src="https://images.ctfassets.net/wtodlh47qxpt/4AcPJzGNNxfXiF1rWvlydj/2a8548a717ff678fbfb0d881b7367ba8/KFC-Gold-Burger-White-Category-23MAY_4.jpg?fm=webp&fit=fill"
+                alt="" height="250px" width="300px"></div>
+        <p class="p1"></p>
+        <p class="p2"><b>CHICKEN BUCKETS</b></p>
+        <p class="p3"><b>BURGERS</b></p>
+    </section>
+    <table cellspacing="10px">
+        <tr class="tr1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/782tSItfC1k71car62R8tO/8384bf065c922a466ba3d6db09473e26/Dynamite_without_noodle_-_465x327px.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/OsPG6HEPTSKOCHku4cNPK/18318ba3f9be3f47f60721687a719dda/Shawowrma_wrap_LSM_465x327.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/4AcPJzGNNxfXiF1rWvlydj/2a8548a717ff678fbfb0d881b7367ba8/KFC-Gold-Burger-White-Category-23MAY_4.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td><img src="https://images.ctfassets.net/wtodlh47qxpt/42VUF8RtwFLGRqsfCrEqeC/f3c7ff38d40432f33b3100c4e453cef1/KFC-Burger.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+        </tr>
+        <tr class="tr2" style="height: 50px;">
+            <td><b>BOX MEALS</b></td>
+            <td><b>VARIETY BUCKETS</b></td>
+            <td><b>CHICKEN BUCKETS</b></td>
+            <td><b>BURGERS</b></td>
+        </tr>
+        <tr class="tr1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/17ISsnLKJvcyiikLS9NUn4/4d5eb1c0e0efc8e0d1b2e1b1809edc3d/KFC-Category-Images-465-X-327-Grilled_Chicken.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/7tEmaFwdTOKmVNf724nD21/cb386eac4c508bce817d3daa22a1d3b6/KFC-rice-bowl.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/1cS5c1DDcmYuwT0g2edC3f/48712d8b753b8cb6c6abd662398fec70/KFC-Beverages.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td><img src="https://images.ctfassets.net/wtodlh47qxpt/169o6qKazOgakFLMKkHUGY/d9d657af816a140bdaf3f5a7d64e3ef7/KFC-Veg.jpg?fm=webp&fit=fill"
+                    alt="" td class="td1">
+        </tr>
+        <tr class="tr2" style="height: 50px;">
+            <td><b>GRILLED CHICKEN</b></td>
+            <td><b>RICE BOWLZ</b></td>
+            <td><b>DESSERTS & BEVERAGES</b></td>
+            <td><b>VEG</b></td>
+        </tr>
+        <tr class="tr1">
+            <td> <img
+                    src="https://images.ctfassets.net/wtodlh47qxpt/5VQAImh8fghx8cYtmjRBxu/050c6b65545546ecca314321a5dddc15/CAT89?fm=webp&fit=fill"
+                    alt="" td class="td1">
+            <td style="background-color: #F8F7F5;"> </td>
+            <td style="background-color: #F8F7F5;"> <img
+                    src="https://online.kfc.co.in/static/media/Finger_lickInMob.fc23e8b1.svg" alt="" height="300px">
+            </td>
+            <td style="background-color: #F8F7F5;"></td>
+        </tr>
+        <tr class="tr2" style="height: 50px;">
+            <td><b>SIDES & ROLLS</b></td>
+        </tr>
+    </table>
+    <div class="i1"></div>
+    <div class="i2"></div>
+    <div class="i3"></div>
+    <h1 class="t2">
+        Save More as you order
+    </h1>
+    <table style="width: 200px;">
+        <tr>
+            <div class="scr1">
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/FREEROLL.jpg?ver=1.0.0"
+                    alt="" height="200px" class="v1">
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/no-image.jpg"
+                    alt="" height="200px" class="v2">
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/no-image.jpg"
+                    alt="" height="200px" class="v3">
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/KFC50.jpg?ver=1.0.0"
+                    alt="" height="200px" class="v4">
+            </div>
+        </tr>
+    </table>
+    <div class="f1">
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg?h=120&w=120&fm=webp&fit=fill"
+            alt="" height="80px" width="80px" class="logo">
+    </div>
+    <ul class="bmw" type="none">
+        <li>Legal</li>
+        <li>Terms and <br> Conditions</li>
+        <li>Privacy Center</li>
+        <li>Disclaimer</li>
+        <li>Caution Notice</li>
+    </ul>
+    <ul class="bmw2" type="none">
+        <li>About KFC</li>
+        <li>KFC Care</li>
+        <li>KFC India</li>
+        <li>Careers</li>
+        <li>Our Golden Past</li>
+        <li>Responsible Disclosure</li>
+    </ul>
+    <ul class="bmw3" type="none">
+        <li> KFC Food</li>
+        <li> Menu</li>
+        <li> Order Lookup</li>
+        <li> Gift Card</li>
+        <li> Nutrition & Allergen</li>
+    </ul>
+    <ul class="bmw4 " type="none">
+        <li> Support</li>
+        <li> Get Help</li>
+        <li> Contact Us</li>
+        <li> KFC Feedback</li>
+        <li> Privacy Center</li>
+    </ul>
+    <div class="bmw5"><a href="" style="color: white;"> <i class="fa-sharp fa-solid fa-location-crosshairs"></i>Find A
+            KFC</a></li>
+    </div>
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg?h=90&w=266&fm=webp&fit=fill"
+        alt="" class="bmw6">
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg?h=90&w=266&fm=webp&fit=fill"
+        alt="" class="bmw7">
+    <summary> class="bmw8">Copyright © KFC Corporation 2026 All rights reserved build pwa-2509-1-1_b7b0fc5b</summary>
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg?h=60&w=60&fm=webp&fit=fill"
+        alt="" class="bmw9">
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/dKiu2meLcfz2DNwsg7nZw/7194830b1ba6f25b158a23d6b2c4752c/Social_Facebook_White.svg?h=60&w=60&fm=webp&fit=fill"
+        alt="" class="bmw9">
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg?h=60&w=60&fm=webp&fit=fill"
+        alt="" class="bmw9">
+            <div class="ss2" >    
+    <img src="https://crystalpng.com/wp-content/uploads/2025/05/kfc-logo.png" alt="" class="ss1">
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 200px;
+        width: 200px;
+        animation-name: color_change;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes color_change{
+        from{
+          background-color: plum;
+        }
+        to{
+          
+            background-color: aqua;
+        }
+    }
+   #img{
+    width: 200px;
+    position: relative;
+    animation: fly 6s infinite alternate ease-in;
+}
+
+@keyframes fly{
+    from{
+    transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fly{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 800px;
+        transform: rotate(360deg);
+    }
+}
+#img2{
+    width: 200px;
+    position: relative;
+    animation: fly2 6s infinite alternate linear;
+}
+
+@keyframes fly2{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 800px;
+        transform: rotate(360deg);
+    }
+}
+</style>
+<body>
+    <section class="box1"></section>
+    <img id="img" src="v.jpg" alt="">
+    <img id="img2" src="me.jpg" alt="">
+</body>
+</html>

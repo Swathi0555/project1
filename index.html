@@ -1,185 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neumorphism Password generator</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* dark mode toggle  & github buttons */
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px 24px;
-        }
-
-        .navbtn {
-            position: absolute;
-            left: 2rem;
-            margin-top: 0.3rem;
-        }
-
-        .theme-switch-wrapper {
-            display: flex;
-            align-items: center;
-        }
-
-        .theme-switch-wrapper em {
-            margin-left: 10px;
-            font-size: 1rem;
-        }
-
-        .theme-switch {
-            display: inline-block;
-            height: 34px;
-            position: relative;
-            width: 60px;
-        }
-
-        .theme-switch input {
-            display: none;
-        }
-
-        .slider {
-            background-color: var(--togglebg);
-            bottom: 0;
-            cursor: pointer;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transition: 0.4s;
-            /* filter: var(--filter); */
-        }
-
-        .slider:before {
-            background-color: var(--roundcolor);
-            bottom: 4px;
-            content: "";
-            height: 26px;
-            left: 4px;
-            position: absolute;
-            transition: 0.4s;
-            width: 26px;
-        }
-
-        input:checked+.slider {
-            background-color: var(--toggleslider);
-        }
-
-        input:checked+.slider:before {
-            transform: translateX(26px);
-        }
-
-        .slider.round {
-            border-radius: 34px;
-        }
-
-        .slider.round:before {
-            border-radius: 50%;
-        }
-
-        em {
-            color: var(--togglesliderColor);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamleys Clone - Toy Store</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- /* dark mode toggle & github buttons   */ -->
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/46/applications/605884f889251331fe847d80/application/pictures/free-logo/original/04rZ3hlC2-HAMLEYS_IN.png" alt="">
     <nav>
-       <!--  <div class="navbtn">
-            <a class="github-button" href="https://github.com/smthari/Password-generator-using-html-css-javascript/fork"
-                data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-repo-forked"
-                data-size="large" data-show-count="true"
-                aria-label="Fork smthari/Password-generator-using-html-css-javascript on GitHub">Fork</a>
-
-            <a class="github-button" href="https://github.com/smthari/Password-generator-using-html-css-javascript"
-                data-color-scheme="no-preference: dark; light: light; dark: dark;" data-icon="octicon-star"
-                data-size="large" data-show-count="true"
-                aria-label="Star smthari/Password-generator-using-html-css-javascript on GitHub">Star</a>
-
-            <a class="github-button" href="https://github.com/smthari"
-                data-color-scheme="no-preference: dark; light: light; dark: dark;" data-size="large"
-                data-show-count="true" aria-label="Follow @smthari on GitHub">Follow @smthari</a>
-        </div> -->
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-            <em>Switch Theme</em>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h2>Password Generator</h2>
-        <div class="result-container">
-            <textarea id="PasswordResult"></textarea>
-        </div>
-        <div class="settings">
-            <div class="setting">
-                <label>Password length</label>
-                <input type="number" id="Passwordlength" min="4" max="20" value="8" />
-            </div>
-            <div class="setting">
-                <label>Include uppercase letters</label>
-                <input type="checkbox" id="uppercase" checked />
-            </div>
-            <div class="setting">
-                <label>Include lowercase letters</label>
-                <input type="checkbox" id="lowercase" checked />
-            </div>
-            <div class="setting">
-                <label>Include numbers</label>
-                <input type="checkbox" id="numbers" checked />
-            </div>
-            <div class="setting">
-                <label>Include symbols</label>
-                <input type="checkbox" id="symbols" checked />
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="btn btn-large" id="generateBtn">
-                <i class="fas fa-key"></i> Genrate
-            </button>
-            <button class="btn" id="clipboardBtn">
-                <i class="far fa-clipboard"></i> Copy
-            </button>
-        </div>
+      <a href="#">Shop toys</a>
+      <a href="#">Toys by age</a>
+      <a href="#">Brands</a>
+      <a href="#">Sales</a>
+      <a href="#">Return gifts</a>
+      <a href="#">Spiderman</a>
+    <div class="icons">
+      <span>login</span>
+      <span>wishlist</span>
+      <span>my bag</span>
     </div>
-    <script src="script.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
-    <script>
-        /* dark mode toggle  */
-        const toggleSwitch = document.querySelector(
-            '.theme-switch input[type="checkbox"]'
-        );
-        const currentTheme = localStorage.getItem("theme");
+  </header>
+   <li id="toys1"><a href="">Toys by age</a>
+                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                </li>
+                <!-- Dropdown -->
+                <div id="toys">
+                    <div class="toys-item">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/misc/pictures/free-icon/original/-VWVctqGu-172250456092624.webp" alt="">
+            
+                    </div>
+                    <div class="toys-item">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/misc/pictures/free-icon/original/kqBeTzoTP-18-to-36-Months.png" alt="">
+                    </div>
+                    <div class="toys-item">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/misc/pictures/free-icon/original/rJeOr54v8-172250587592630.webp" alt="">
+                
+                    </div>
+                    <div class="toys-item">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/misc/pictures/free-icon/original/j_tIYTo1z-172250610992632.webp" alt="Rottweiler">
+                        <p>Rottweiler</p>
+                    </div>
+                    <div class="breed-item">
+                        <img src="https://placedog.net/300/300?id=5" alt="Beagle">
+                        <p>Beagle</p>
+                    </div>
+                    <div class="breed-item">
+                        <img src="https://placedog.net/300/300?id=6" alt="Shih Tzu">
+                        <p>Shih Tzu</p>
+                    </div>
+                    <div class="breed-item">
+                        <img src="https://placedog.net/300/300?id=7" alt="Boxer">
+                        <p>Boxer</p>
+                    </div>
+                </div>
+                <li><a href="">Consult a vet</a></li>
+                <li><a href="">Supertails clinic</a></li>
+            </ul>
+        </nav>
 
-        if (currentTheme) {
-            document.documentElement.setAttribute("data-theme", currentTheme);
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Magical Toys Await!</h1>
+      <p>Shop the biggest toy collection online</p>
+      <button>Shop Now</button>
+    </div>
+  </section>
 
-            if (currentTheme === "dark") {
-                toggleSwitch.checked = true;
-            }
-        }
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="grid">
+      <div class="card">Action Figures</div>
+      <div class="card">Board Games</div>
+      <div class="card">Educational</div>
+      <div class="card">Outdoor</div>
+    </div>
+  </section>
 
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute("data-theme", "dark");
-                localStorage.setItem("theme", "dark");
-            } else {
-                document.documentElement.setAttribute("data-theme", "light");
-                localStorage.setItem("theme", "light");
-            }
-        }
+  <!-- Products -->
+  <section class="products">
+    <h2>Trending Now</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="toy">
+        <h3>Toy Name</h3>
+        <p>₹1,499</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="toy">
+        <h3>Toy Name</h3>
+        <p>₹2,199</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="toy">
+        <h3>Toy Name</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
 
-        toggleSwitch.addEventListener("change", switchTheme, false);
-    </script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Hamleys Clone. For practice purpose only.</p>
+  </footer>
+
 </body>
-
 </html>
